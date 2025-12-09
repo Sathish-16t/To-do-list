@@ -33,6 +33,7 @@ i {
   color: white;
   border-radius: 4px;
   transition: 0.2s ease-in;
+  display:none;
 }
 .link:hover {
   color: gray;
@@ -414,3 +415,4 @@ a:hover {
     cursor: pointer;
   }
 }
+
