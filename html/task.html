@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/task.css" />
+    <title>Task Page</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <i class="fas fa-arrow-left" onclick="backhome()" id="back"></i>
+      <h3>Add Task</h3>
+    </header>
+
+    <main class="main">
+      <div>
+        <label for="task">Label</label><br />
+        <input type="text" id="task" />
+      </div>
+      <div class="starend">
+        <div>
+          <label for="start">Start</label><br />
+          <select name="" id="start">
+            <option value="">1am</option>
+            <option value="">2am</option>
+            <option value="">3am</option>
+            <option value="">4am</option>
+            <option value="">5am</option>
+            <option value="">6am</option>
+            <option value="">7am</option>
+            <option value="">9am</option>
+            <option value="">10am</option>
+            <option value="">11m</option>
+            <option value="">12am</option>
+            <option value="">1pm</option>
+            <option value="">1pm</option>
+            <option value="">3pm</option>
+            <option value="">5pm</option>
+            <option value="">6pm</option>
+            <option value="">7pm</option>
+            <option value="">8pm</option>
+            <option value="">9pm</option>
+            <option value="">10pm</option>
+            <option value="">11pm</option>
+            <option value="">12pm</option>
+          </select>
+        </div>
+        <div>
+          <label for="end">End</label><br />
+          <select name="" id="end">
+            <option value="">1am</option>
+            <option value="">2am</option>
+            <option value="">3am</option>
+            <option value="">4am</option>
+            <option value="">5am</option>
+            <option value="">6am</option>
+            <option value="">7am</option>
+            <option value="">8am</option>
+            <option value="">9am</option>
+            <option value="">10am</option>
+            <option value="">11m</option>
+            <option value="">12am</option>
+            <option value="">1pm</option>
+            <option value="">2pm</option>
+            <option value="">3pm</option>
+            <option value="">4pm</option>
+            <option value="">5pm</option>
+            <option value="">6pm</option>
+            <option value="">7pm</option>
+            <option value="">8pm</option>
+            <option value="">9pm</option>
+            <option value="">10pm</option>
+            <option value="">11pm</option>
+            <option value="">12pm</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="repeat">Repeat</label><br />
+        <select name="" id="repeat">
+          <option value="">Every day</option>
+          <option value="">Once</option>
+        </select>
+      </div>
+    </main>
+    <footer>
+      <button class="create" onclick="addTask()">create task</button>
+    </footer>
+    <script src="../js/task.js"></script>
+  </body>
+</html>
