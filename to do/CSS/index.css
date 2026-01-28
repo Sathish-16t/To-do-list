@@ -1,0 +1,82 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: 'poppins',sans-serif;
+
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+}
+.heading{
+    line-height: 0.5px;
+}
+.greettxt{
+    text-align: center;
+}
+.input-name{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 5px;
+font-size: 1.6rem;
+    font-family: 'poppins',sans-serif;
+
+    height: 44px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid gray;
+}
+.input-name:focus{
+    border: 1px solid blue;
+}
+.get-btn{
+    margin-top: 32px;
+    width: 100%;
+    height: 44px;
+    font-family: 'poppins',sans-serif;
+    padding: 10px ;
+    border-radius: 8px;
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 1.6rem;
+}
+.get-btn:hover{
+    border: 1px solid blue;
+    background-color: white;
+    color: black;
+    box-shadow: 0px  4px 10px 0px rgb(150, 150, 241);
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+}
+
+.place-name{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    transition: 0.5s ease-in;
+    color: gray;
+}
+.input-name:focus + .place-name,.input-name:not(:placeholder-shown)+.place-name{
+color: black;
+top: 0px;
+background-color: white;
+}

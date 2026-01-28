@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/task.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+<body id="body">
+    <main class="main-container">
+  
+        <!-- nav sections and side  bars  -->
+
+       <nav class="nav-container">
+        <div>
+          <i class="fas fa-bars" id="side-bar"></i>
+        </div>
+        <div>
+          <input type="search" class="input-search" id="input-search">
+        </div>
+        <div class="search-bell-box">
+         <i class="fas fa-search" id="search-icon"></i>
+         <i class="fas fa-bell"></i>
+        </div>
+       </nav>
+       
+       <aside class="side-box" id="side-box">
+        <a  class="side-link" href="task.html">Add Task</a>
+        <a  class="side-link" onclick="completedTask()">Completed Tasks</a>
+        <a  class="side-link" onclick="allShow()">All Task</a>
+        <a  class="side-link" onclick="category('Education')">Education</a>
+        <a  class="side-link" onclick="category('Sports')">Sports</a>
+        <a  class="side-link" onclick="category('Targets')">Targets</a>
+        <a  class="side-link" onclick='logout()'>Logout</a>
+       </aside>
+
+       <!-- greetings section  -->
+
+       <section class="greetings-box">
+        <h3 class="name">Hey there ,<span id="nametxt">sathish</span></h3>
+        <small>Welcome to my planner! let's do </small>
+       </section>
+
+       <div class="desktop">
+
+       <!-- categories section  -->
+        <section class="category-container">
+            <h3 class="categorytxt">Categories</h3>
+            <div class="image-box">
+
+             <div >
+                <img src="../ASSETS/images/task.png" alt="task image" class="cate-image"  onclick="allShow()">
+                <small>All tasks</small>
+             </div>
+
+             <div>
+                <img src="../ASSETS/images/cap.png" alt="degree cap image" class="cate-image" onclick="category('Education')">
+                <small>Education</small>
+             </div>
+
+             <div>
+                <img src="../ASSETS/images/ball.png" alt="ball image" class="cate-image" onclick="category('Sports')">
+                <small>Sports</small>
+             </div>
+
+             <div>
+                <img src="../ASSETS/images/target.png" alt="target image" class="cate-image" onclick="category('Targets')">
+                <small>Targets</small>
+             </div>
+             
+            </div>
+
+        </section>
+
+     <div class="task-form-container">
+
+        <!-- all tasks  -->
+       
+        <section class="tasks-container">
+         <i class="fas fa-arrow-left" id="back-btn"></i>
+         <h3 class="tasktxt">All tasks</h3>
+         <ul class="list-box" id="list-box"></ul>
+        </section>
+
+        
+
+        <!-- footer  -->
+
+        <footer class="foot-container1">
+         <div class="createbtn-box">
+         <button class="create-btn" id="create-btn"> <i class="fa-solid fa-plus"></i>    Create Task</button>
+         </div>
+        </footer>
+        
+    
+    <section class="main-container">
+        
+<!-- headding  -->
+
+        <section class="head-box">
+         <h3 class="addtask-txt">Add Task</h3>
+        </section>
+
+        <!-- form section  -->
+<form id="form">
+        <section class="form-container">
+         <div class="category-box">
+            <label class="labels">Category</label>
+            <select class="category" id="category">
+                <option value="Education">Education</option>
+                <option value="Sports">Sports</option>
+                <option value="Targets">Targets</option>
+            </select>
+         </div>
+         <div class="task-box">
+            <label class="labels">Label</label>
+            <input type="text" class="task" required id="task">
+         </div>
+         <div class="time-box">
+            <div class="start-box">
+                <label class="labels">Start</label>
+                <input type="time" class="time" required id="start">
+            </div>
+            <div class="end-box">
+                <label class="labels">End</label>
+                <input type="time" class="time" required id="end">
+            </div>
+
+         </div>
+         <div class="repeat-box">
+            <label class="labels">Repeat</label>
+            <select class="repeat" id="repeat">
+                <option value="Once">Once</option> 
+                <option value="Everyday">Everyday</option> 
+            </select>
+         </div>
+
+        </section>
+        
+        <!-- footer section  -->
+
+        <footer class="foot-container">
+          <samll class="toast" id="toast">Task added successfully</samll>
+          <button class="add-btn" type="submit" id="add-btn">Add Task</button>
+        </footer>
+        </form>
+
+    </section>
+
+    <script src="../JS/task.js"></script>
+   
+</div>
+       </div>
+
+    </main>
+    
+
+    <script src="../JS/home.js"></script>
+    
+</body>
+</html>
